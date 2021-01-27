@@ -1,0 +1,55 @@
+#logo {
+  width: 120px;
+  height: 100px;
+  margin: 10px;
+}
+#home {
+  position: absolute;
+  left: 50%;
+  top: 30px;
+}
+
+.list {
+  list-style-type: none;
+  display: flex;
+  float: left;
+  margin: 2px;
+}
+
+.navi {
+  display: block;
+  font-style: italic;
+  text-decoration: none;
+  border: solid;
+  border-radius: 100px 80px;
+  padding: 10px;
+  margin: 2px;
+  color: rgb(212, 175, 55);
+}
+
+.navi:hover {
+  color:blue;
+  text-decoration: none;
+}
+.navi:active {
+  color: green;
+}
+.navi:focus{
+  color:black;
+}
+
+.gallery {
+  width: 1400px;
+  height: 250px;
+}
+
+.searchbar {
+  float: left;
+  display: block;
+  font-style: italic;
+  border: solid;
+  border-radius: 100px 80px;
+  padding: 10px;
+  margin: 2px;
+  color: rgb(212, 175, 55);
+}
