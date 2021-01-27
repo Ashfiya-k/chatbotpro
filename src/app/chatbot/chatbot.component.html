@@ -3,7 +3,8 @@ chatbot works!
 </p>
 <div id="bot" class="container">
   <div class="input-form" id="msg" >
-<input type="text" class="form-control" class="text"  >
-<button  class="btn" class="text"><i class="glyphicon glyphicon-send"></i></button>
+    <p>{{sendText}}</p>
+<input type="text" class="form-control" class="text" [(ngModel)]="txt"  >
+<button  class="btn" class="text" (click)="onSend()"><i class="glyphicon glyphicon-send"></i></button>
 </div>
 </div>

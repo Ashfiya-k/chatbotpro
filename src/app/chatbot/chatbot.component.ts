@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./chatbot.component.css']
 })
 export class ChatbotComponent implements OnInit {
-
+   txt='';
+   sendText='';
+   status=false;
   constructor() { }
 
   ngOnInit() {
+  }
+  onSend(){
+    this.sendText=this.txt;
+    this.txt='';
+    this.status=true;
+    this.sendText;
+
   }
 
 }
