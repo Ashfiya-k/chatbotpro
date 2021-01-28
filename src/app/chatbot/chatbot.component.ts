@@ -7,17 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChatbotComponent implements OnInit {
    txt='';
-   sendText='';
+   sendText=[];
    status=false;
   constructor() { }
 
   ngOnInit() {
   }
-  onSend(){
-    this.sendText=this.txt;
-    this.txt='';
-    this.status=true;
+  onSend(txt){
+    this.sendText.push(txt.value);
     this.sendText;
+    txt.value='';
 
   }
 

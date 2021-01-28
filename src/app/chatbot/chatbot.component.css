@@ -1,3 +1,8 @@
+
+*{
+  background-color:black;
+}
+
 #bot {
   padding: 10px;
   width: 600px;
@@ -7,6 +12,8 @@
   display: flex;
   box-shadow: 3px 5px 3px  5px #88888888;
   border-color: rgb(212, 175, 55);
+  overflow-y:scroll;
+  
 }
 .text{
 margin:10px;
@@ -19,4 +26,19 @@ margin:10px;
   
   color: rgb(212, 175, 55);
 }
+#t{
+  width:fit-content;
+  margin:5px;
+     float: left;
+  display: block;
+  font-style: italic;
+  border: solid;
+  border-radius: 100px 80px;
+  padding: 5px;
+  
+  border-color: rgb(212, 175, 55);
+  color:white;
+  background-color:black;
+}
+
 

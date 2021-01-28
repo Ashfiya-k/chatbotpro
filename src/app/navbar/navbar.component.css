@@ -1,3 +1,6 @@
+*{
+  background-color: black;
+}
 #logo {
   width: 120px;
   height: 100px;
@@ -5,7 +8,7 @@
 }
 #home {
   position: absolute;
-  left: 50%;
+  left: 45%;
   top: 30px;
 }
 
@@ -22,20 +25,19 @@
   text-decoration: none;
   border: solid;
   border-radius: 100px 80px;
-  padding: 10px;
-  margin: 2px;
+
   color: rgb(212, 175, 55);
 }
 
 .navi:hover {
-  color:blue;
+  
   text-decoration: none;
 }
 .navi:active {
   color: green;
 }
 .navi:focus{
-  color:black;
+  color:goldenrod;
 }
 
 
@@ -45,7 +47,8 @@
   font-style: italic;
   border: solid;
   border-radius: 100px 80px;
-  padding: 10px;
-  margin: 2px;
-  color: rgb(212, 175, 55);
+   margin:1px;
+  border-color: rgb(212, 175, 55);
+  color: white;
+  font-weight:bold;
 }
