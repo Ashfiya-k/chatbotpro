@@ -1,22 +1,20 @@
-*{
-  background-color: black;
-}
+
 #logo {
   width: 120px;
   height: 100px;
   margin: 10px;
 }
-#home {
-  position: absolute;
-  left: 45%;
-  top: 30px;
-}
 
-.list {
+
+/* .list {
   list-style-type: none;
   display: flex;
   float: left;
   margin: 2px;
+} */
+
+.navbar-toggler{
+  outline:none;
 }
 
 .navi {
@@ -25,17 +23,17 @@
   text-decoration: none;
   border: solid;
   border-radius: 100px 80px;
-
+   outline:none;
+   padding:10px;
+   margin:5px;
   color: rgb(212, 175, 55);
 }
 
 .navi:hover {
-  
+  background-color: grey;
   text-decoration: none;
 }
-.navi:active {
-  color: green;
-}
+
 .navi:focus{
   color:goldenrod;
 }
@@ -45,10 +43,21 @@
   float: left;
   display: block;
   font-style: italic;
+  
   border: solid;
   border-radius: 100px 80px;
    margin:1px;
   border-color: rgb(212, 175, 55);
-  color: white;
+  color:black;
   font-weight:bold;
+  outline:none;
+}
+
+footer{
+ position:fixed;
+ bottom:30px;
+ right:60px;
+ float:left;
+ z-index:9999;
+
 }

@@ -1,13 +1,13 @@
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
+<!-- <div id="myCarousel" class="carousel slide" data-ride="carousel"> -->
+    <!-- Indicators --
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
   
-    <!-- Wrapper for slides -->
+    <!-- Wrapper for slides --
     <div class="carousel-inner">
       <div class="item active">
         <img  class="gallery" src="https://cdn.jsdelivr.net/gh/Ashfiya-k/chatbotpro@master/Biryani.jpg" >
@@ -22,7 +22,7 @@
       </div>
     </div>
   
-    <!-- Left and right controls -->
+    <!-- Left and right controls --
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left"></span>
       <span class="sr-only">Previous</span>
@@ -32,3 +32,45 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+-->
+<carousel 
+ [cellWidth]="'100%'" 
+ [autoplay]="true" 
+ [autoplayInterval]="3000" 
+ [loop]=true 
+ [dots]="true"  
+ [height]="650"
+  [width]="1350"
+   [objectFit]="'contain'"
+    [overflowCellsLimit]="1"
+    [cellsToShow]="1"
+    [pauseOnHover]="false"
+    [loop]="true"
+    >
+   <div class="carousel-cell">
+       <img  src="https://cdn.jsdelivr.net/gh/Ashfiya-k/chatbotpro@master/Pizza.jpg" > -->
+      
+   </div>
+  <div class="carousel-cell ">
+      <img [width]="1000" src="https://cdn.jsdelivr.net/gh/Ashfiya-k/chatbotpro@master/Biryani.jpg" >
+   </div>
+     <div class="carousel-cell">
+      <img  src="https://cdn.jsdelivr.net/gh/Ashfiya-k/chatbotpro@master/Mixveg.jpg" >
+   </div>
+
+</carousel> 
+
+
+ 
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <h2 class=" option ">Deliver</h2>
+
+    </div>
+     <div class="col-sm-6">
+      <h2 class="option ">Take Away</h2>
+
+    </div>
+  </div>
+</div>

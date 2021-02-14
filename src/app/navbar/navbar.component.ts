@@ -8,8 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
 
   constructor() { }
-
+  navbarStatus=false;
+  onNavbarShow(){
+    this.navbarStatus=!this.navbarStatus;
+  }
   ngOnInit() {
+  }
+  chatbotStatus=false;
+  slideToggle(){
+    this.chatbotStatus=!this.chatbotStatus;
+
   }
 
 }

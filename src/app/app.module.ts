@@ -8,15 +8,19 @@ import { HelloComponent } from "./hello.component";
 import { NavbarComponent } from "./navbar/navbar.component";
 import { HomeComponent } from "./home/home.component";
 import { ChatbotComponent } from "./chatbot/chatbot.component";
+import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, AppRoutingModule],
+  imports: [BrowserModule, FormsModule, AppRoutingModule,IvyCarouselModule],
   declarations: [
     AppComponent,
     HelloComponent,
     NavbarComponent,
     HomeComponent,
-    ChatbotComponent
+    ChatbotComponent,
+    MenuComponent,
+    
   ],
   bootstrap: [AppComponent]
 })
