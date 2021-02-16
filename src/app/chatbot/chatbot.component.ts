@@ -31,6 +31,7 @@ export class ChatbotComponent implements OnInit {
 
   ngOnInit() {
   }
+  
   onSend(txt){
      if(txt.value=== "")
      {
@@ -38,8 +39,18 @@ export class ChatbotComponent implements OnInit {
      }
      else{
     this.sendText.push(txt.value);
-    this.sendText;
-    this.onReply(txt.value);
+    
+     this.reply=this.chatService.getReply(txt.value);
+
+      if(this.reply !== undefined)
+      {
+          this.sendText.push(this.reply.ans);
+      }   
+      else{
+   
+      this.sendText.push("Sorry i did not Understand.");
+      console.log("in reply method" );
+      }
     txt.value='';
     
  
@@ -48,11 +59,7 @@ export class ChatbotComponent implements OnInit {
     
   }
 
-  onReply(text){
-      this.reply=this.chatService.getReply(text);
-       
-     this.replyText.push(this.reply.ans);
-      console.log("in reply method" );
+ 
         
     
     
@@ -60,5 +67,3 @@ export class ChatbotComponent implements OnInit {
    
      
      }
-
-}

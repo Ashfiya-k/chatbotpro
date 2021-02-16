@@ -13,17 +13,11 @@
 <div id="bot" class="container">
 
  <div id="msgBox">
-    <div *ngFor="let x of sendText" >
-    
+    <div *ngFor="let x of sendText" [ngStyle]="{backgroundColor:  }">
     <p id="customer">
         {{x}}
-      
       </p>
       <br />
-   <div *ngFor="let y of replyText">
-      <p id="robot" >{{y}}
-      </p>
-      </div>
       
     </div>
   

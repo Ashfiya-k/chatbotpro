@@ -6,6 +6,7 @@ export class ChatService {
   constructor() { }
 
    conversation=[
+    
        {
          ques:"Hi",
          ans:"Hello there! How can I help you?"
@@ -18,6 +19,11 @@ export class ChatService {
           {
          ques:"Whats there in Indian category",
          ans:"We have  1)Veg-Thali 2)Idli Sambhar 3)Masala Dosa 4)PavBhaji 5)CholeKulcha  6)Mutton Biryani"
+       },
+       {
+         ques:undefined,
+         ans:'Sorry,I did not Understand.'
+
        }
      ];
 
