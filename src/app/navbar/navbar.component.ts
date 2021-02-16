@@ -13,6 +13,7 @@ export class NavbarComponent implements OnInit {
     this.navbarStatus=!this.navbarStatus;
   }
   ngOnInit() {
+    
   }
   chatbotStatus=false;
   slideToggle(){

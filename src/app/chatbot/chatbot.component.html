@@ -14,9 +14,19 @@
 
  <div id="msgBox">
     <div *ngFor="let x of sendText" >
-    <p id="para">{{x}}</p><br />
+    
+    <p id="customer">
+        {{x}}
+      
+      </p>
+      <br />
+   <div *ngFor="let y of replyText">
+      <p id="robot" >{{y}}
+      </p>
       </div>
-  <div>
+      
+    </div>
+  
 
 
 <div id="inputBox">

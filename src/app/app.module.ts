@@ -10,6 +10,9 @@ import { HomeComponent } from "./home/home.component";
 import { ChatbotComponent } from "./chatbot/chatbot.component";
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { MenuComponent } from './menu/menu.component';
+import { ContactsComponent } from './contacts/contacts.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { ChatService } from './chatbot/chat.service';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule,IvyCarouselModule],
@@ -20,8 +23,11 @@ import { MenuComponent } from './menu/menu.component';
     HomeComponent,
     ChatbotComponent,
     MenuComponent,
+    ContactsComponent,
+    AboutusComponent,
     
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [ChatService]
 })
 export class AppModule {}

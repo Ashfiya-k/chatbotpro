@@ -1,7 +1,6 @@
 *{
   background-color: white;
 }
-
 #bot {
   padding: 10px;
   width: 300px;
@@ -27,7 +26,7 @@
 
 
 
-#para{
+#customer{
   font-style: italic;
   border: solid;
   border-radius: 6px;
@@ -37,6 +36,20 @@
   margin-top:2px;
   padding:10px;
 }
+
+#robot{
+    font-style: italic;
+  border: solid;
+  border-radius: 6px;
+  border-color: rgb(212, 175, 55);
+  color:black;
+  background-color: greenyellow;
+  margin-top:2px;
+  padding:10px;
+
+}
+
+
 
 .text{
 margin:5px;

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ChatService } from './chat.service';
 
 @Component({
   selector: 'app-chatbot',
@@ -21,24 +22,12 @@ export class ChatbotComponent implements OnInit {
   // }
 
      sendText=[];
+     replyText=[];
    status=false;
-     conversation=[
-       {
-         ques:"Hi",
-         ans:"Hello there! How can I help you?"
-       },
-          {
-         ques:"What is in the menu",
-         ans:"We have 1)Italian  2)Chinese  3)Indian "
-       },
+   reply:{ques:string,ans:string};
+      
 
-          {
-         ques:"What you have in Indian category",
-         ans:"We have  1)Veg-Thali 2)Idli Sambhar 3)Masala Dosa 4)PavBhaji 5)CholeKulcha  6)Mutton Biryani"
-       }
-     ];
-
-  constructor() { }
+  constructor(private chatService:ChatService) { }
 
   ngOnInit() {
   }
@@ -50,26 +39,26 @@ export class ChatbotComponent implements OnInit {
      else{
     this.sendText.push(txt.value);
     this.sendText;
+    this.onReply(txt.value);
     txt.value='';
- this.onReply(txt.value);
+    
+ 
      }
 
-    // this.onReply(txt.value);
+    
   }
 
   onReply(text){
-     for( var i=0;i<this.conversation.length;i+1)
-     {
-      if(text === this.conversation[i].ques)
-   {
-     console.log("in reply method" );
-     this.sendText.push(this.conversation[i].ans);
-     this.sendText;
+      this.reply=this.chatService.getReply(text);
+       
+     this.replyText.push(this.reply.ans);
+      console.log("in reply method" );
+        
     
     
-   }
-   break;
-     }
+    
+   
+     
      }
 
 }
