@@ -31,15 +31,18 @@ export class ChatbotComponent implements OnInit {
 
   ngOnInit() {
   }
-  
+  colorStatus:boolean;
+
+
   onSend(txt){
-     if(txt.value=== "")
+     if(txt.value === "")
      {
        this.status=true;
      }
      else{
+       this.colorStatus=true;
     this.sendText.push(txt.value);
-    
+         this.colorStatus=false;
      this.reply=this.chatService.getReply(txt.value);
 
       if(this.reply !== undefined)
@@ -52,12 +55,13 @@ export class ChatbotComponent implements OnInit {
       console.log("in reply method" );
       }
     txt.value='';
-    
- 
+
+     }
+  }
+      getColor(){
+       return this.colorStatus === true ?'aqua':'yellowgreen';
      }
 
-    
-  }
 
  
         
