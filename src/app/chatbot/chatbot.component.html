@@ -13,8 +13,8 @@
 <div id="bot" class="container">
 
  <div id="msgBox">
-    <div *ngFor="let x of sendText" >
-    <p id="customer"  [ngStyle]="{backgroundColor:getColor()}">
+    <div *ngFor="let x of sendText,let i = index" >
+    <p id="customer"  [ngStyle]="{backgroundColor:i%2===0?'aqua':'yellowgreen'}">
         {{x}}
       </p>
       <br />

@@ -24,8 +24,8 @@ export class ChatbotComponent implements OnInit {
      sendText=[];
      replyText=[];
    status=false;
-   reply:{ques:string,ans:string};
-      
+   reply:{ques:string[,ans:string};
+     
 
   constructor(private chatService:ChatService) { }
 
@@ -40,10 +40,11 @@ export class ChatbotComponent implements OnInit {
        this.status=true;
      }
      else{
-       this.colorStatus=true;
+      // this.colorStatus=true;
     this.sendText.push(txt.value);
-         this.colorStatus=false;
-     this.reply=this.chatService.getReply(txt.value);
+        // this.colorStatus=false;
+        setTimeout(()=>{
+ this.reply=this.chatService.getReply(txt.value);
 
       if(this.reply !== undefined)
       {
@@ -56,11 +57,14 @@ export class ChatbotComponent implements OnInit {
       }
     txt.value='';
 
-     }
+     
+        },2000);
+    
+  }
   }
       getColor(){
-       return this.colorStatus === true ?'aqua':'yellowgreen';
-     }
+    //    return this.colorStatus === true ?'aqua':'yellowgreen';
+      }
 
 
  
