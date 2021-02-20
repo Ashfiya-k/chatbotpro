@@ -24,7 +24,7 @@ export class ChatbotComponent implements OnInit {
      sendText=[];
      replyText=[];
    status=false;
-   reply:{ques:string[,ans:string};
+   reply:{ques:string,ans:string};
      
 
   constructor(private chatService:ChatService) { }
@@ -52,7 +52,7 @@ export class ChatbotComponent implements OnInit {
       }   
       else{
    
-      this.sendText.push("Sorry i did not Understand.");
+      this.sendText.push("Sorry I did not Understand.");
       console.log("in reply method" );
       }
     txt.value='';
