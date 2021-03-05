@@ -28,10 +28,7 @@ converse:{category:string,ques:string[],ans:string};
        
       this.converse= this.chatService.updateChat((<HTMLInputElement>event.target).value);
       console.log(this.converse);
-    //   this.answer= this.converse.ans;
-    //   console.log(this.answer);
-    //   console.log(this.question);
-    // this.converse.ques.forEach((s)=> {this.question.}
+  
     
        console.log("Done");
      }
