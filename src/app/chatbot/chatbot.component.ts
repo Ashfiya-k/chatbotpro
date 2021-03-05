@@ -41,10 +41,11 @@ export class ChatbotComponent implements OnInit {
      else{
   
     this.sendText.push(txt.value);
+  
         
         setTimeout(()=>{
  this.reply=this.chatService.getReply(txt.value.toLowerCase());
-
+       
       if(this.reply !== undefined)
       {
           this.sendText.push(this.reply.ans);
@@ -53,6 +54,7 @@ export class ChatbotComponent implements OnInit {
    
       this.sendText.push("Sorry I did not Understand.");
       console.log("in reply method" );
+        
       }
     txt.value='';
 
