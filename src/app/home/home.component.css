@@ -62,3 +62,18 @@ width:1350px;
 height:650px;
 }
 }  */
+
+
+footer{
+    display:flex;
+  font-style: italic;
+  text-decoration: none;
+  border: solid;
+    border-style: groove;
+      border-radius: 8px;
+   outline:none;
+   padding:10px;
+   margin:5px;
+ border-color: rgb(212, 175, 55);
+
+}
