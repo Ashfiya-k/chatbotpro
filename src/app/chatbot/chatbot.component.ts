@@ -40,9 +40,9 @@ export class ChatbotComponent implements OnInit {
        this.status=true;
      }
      else{
-      // this.colorStatus=true;
+  
     this.sendText.push(txt.value);
-        // this.colorStatus=false;
+        
         setTimeout(()=>{
  this.reply=this.chatService.getReply(txt.value);
 
@@ -62,9 +62,7 @@ export class ChatbotComponent implements OnInit {
     
   }
   }
-      getColor(){
-    //    return this.colorStatus === true ?'aqua':'yellowgreen';
-      }
+   
 
 
  
