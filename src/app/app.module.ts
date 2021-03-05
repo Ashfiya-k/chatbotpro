@@ -13,6 +13,7 @@ import { MenuComponent } from './menu/menu.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ChatService } from './chatbot/chat.service';
+import { EditChatComponent } from './edit-chat/edit-chat.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule,IvyCarouselModule],
@@ -25,6 +26,7 @@ import { ChatService } from './chatbot/chat.service';
     MenuComponent,
     ContactsComponent,
     AboutusComponent,
+    EditChatComponent,
     
   ],
   bootstrap: [AppComponent],
