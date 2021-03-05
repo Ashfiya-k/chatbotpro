@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ChatService } from '../chatbot/chat.service';
 
 @Component({
   selector: 'app-edit-chat',
@@ -7,9 +8,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditChatComponent implements OnInit {
 
-  constructor() { }
+   categories:string[];
+  addRow=false;
+
+
+  constructor(private chatService:ChatService) { }
+converse:{category:string,ques:string[],ans:string};
 
   ngOnInit() {
+    
+       this.categories=this.chatService.getCategory();
+         console.log("Done");
+         
+      this.converse=this.chatService.updateChat(this.categories[0]);
+      console.log(this.converse);
+      
+     }
+     onCategorySelect(event:Event){
+       
+      this.converse= this.chatService.updateChat((<HTMLInputElement>event.target).value);
+      console.log(this.converse);
+    //   this.answer= this.converse.ans;
+    //   console.log(this.answer);
+    //   console.log(this.question);
+    // this.converse.ques.forEach((s)=> {this.question.}
+    
+       console.log("Done");
+     }
   }
+   
 
-}
