@@ -24,7 +24,7 @@ export class ChatbotComponent implements OnInit {
      sendText=[];
      replyText=[];
    status=false;
-   reply:{ques:string,ans:string};
+   reply:{category:string,ques:string[],ans:string};
      
 
   constructor(private chatService:ChatService) { }
