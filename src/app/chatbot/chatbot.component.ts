@@ -22,16 +22,15 @@ export class ChatbotComponent implements OnInit {
   // }
 
      sendText=[];
-     replyText=[];
    status=false;
    reply:{category:string,ques:string[],ans:string};
-     
+  colorStatus:boolean;
 
   constructor(private chatService:ChatService) { }
 
   ngOnInit() {
   }
-  colorStatus:boolean;
+
 
 
   onSend(txt){
@@ -44,7 +43,7 @@ export class ChatbotComponent implements OnInit {
     this.sendText.push(txt.value);
         
         setTimeout(()=>{
- this.reply=this.chatService.getReply(txt.value);
+ this.reply=this.chatService.getReply(txt.value.toLowerCase());
 
       if(this.reply !== undefined)
       {

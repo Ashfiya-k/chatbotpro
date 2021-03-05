@@ -9,7 +9,7 @@ export class ChatService {
     
             {
               category:"Greeting",
-    ques:["Hi","Hello","Good Morning","Good Afternoon","Good Evening"],
+    ques:["hi","Hi","Hello","Good Morning","Good Afternoon","Good Evening"],
     ans:"Hello Friend! How may I assist you?"
 },
      
