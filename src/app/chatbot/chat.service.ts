@@ -143,7 +143,7 @@ export class ChatService {
 },
 
 {
-  category:"PriceBuritos",
+  category:"PriceBurritos",
     ques:["What is the price of Burritos","How much is for the Burritos"],
     ans:"The Burritos will cost you Rs.130 per plate"
 },
@@ -251,12 +251,12 @@ export class ChatService {
          ans:"yes, we have pepperoini pizza"
        },
        {
-          category:"ValidateVAnilaIceCream",
+          category:"ValidateVanilaIceCream",
          ques:["Do you have vannila ice cream"],
          ans:"yes, we have ice cream"
        },
        {
-          category:"VAlidateStrawberryIceCream",
+          category:"ValidateStrawberryIceCream",
          ques:["Do you have strawberry ice cream"],
          ans:"yes, we have strawberry ice cream"
        },
