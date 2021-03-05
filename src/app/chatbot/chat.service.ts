@@ -379,7 +379,7 @@ export class ChatService {
          ques:["Can you place an order for me"],
          ans:"Sorry, I am here to give some basic information about our menu. For orders please call us at 9325670832 and for any  query call us at 1872-1002-76"
        }
-
+     
 
      ];
 
