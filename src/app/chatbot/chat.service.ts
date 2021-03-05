@@ -16,13 +16,13 @@ export class ChatService {
 {
    category:"Menu",
     ques:["Please show the menu?","Which cuisines do you serve?","Where is the menu? ","Kindly display the menu?","Where is this restaurant's menu? ","I need the menu?","I'm hungry! I want a menu.","Menu Please","Menu?","What is in the menu","Menu"],
-    ans:"Sure! Here is our menu. We serve 1.) Indian 2.) Chinese 3.) Italian 4.)Desert"
+    ans:"Sure! Here is our menu. We serve 1.) Indian 2.) Chinese 3.) Italian 4.) Dessert"
 },
 
        {
           category:"Indian",
-    ques:["Show me the Indian cuisine you have?","What would you be serving in the Indian cuisine? ","Please elaborate the Indian menu?","What is there in the Indian menu? "],
-    ans:"Sure! Here is the list of Indian Cuisines we have - 1.) Mutton Biryani 2.) Veg Thali 3.) Idli Sambhar 4.) Paav Bhaaji 5.) Chole Kulchee 6.) Butter Dosa 7.)Pulka 8.)Upma 9.)Masala Dosa 10.)Veg Bityani 11.)Mushroom Biryani 12.) Egg Biryani 13.) Chicken Biryani "
+    ques:["Show me the Indian cuisine you have?","What would you be serving in the Indian cuisine? ","Please elaborate the Indian menu?","What is there in the Indian menu?","Indian Menu"],
+    ans:"Sure! Here is the list of Indian Cuisines we have - 1.) Mutton Biryani 2.) Veg Thali 3.) Idli Sambhar 4.) Paav Bhaaji 5.) Chole Kulchee 6.) Butter Dosa 7.)Pulka 8.)Upma 9.)Masala Dosa 10.)Veg Bityani 11.)Mushroom Biryani 12.) Egg Biryani 13.) Chicken Biryani"
 },
   
 
