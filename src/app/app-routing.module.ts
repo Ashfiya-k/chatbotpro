@@ -5,6 +5,7 @@ import{ ChatbotComponent} from './chatbot/chatbot.component';
 import {MenuComponent} from './menu/menu.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { EditChatComponent } from "./edit-chat/edit-chat.component";
 
 const routes: Routes = [
    { path:'',component:HomeComponent},
@@ -12,6 +13,7 @@ const routes: Routes = [
     { path:"menu",component:MenuComponent},
     { path:"contacts",component:ContactsComponent},
      { path:"aboutus",component:AboutusComponent},
+     { path:"editchat",component:EditChatComponent},
   ];
 
 @NgModule({
