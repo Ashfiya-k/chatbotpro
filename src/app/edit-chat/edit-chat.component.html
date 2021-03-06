@@ -12,9 +12,12 @@
   <label for="question">Question : </label>  &nbsp;
   <div *ngFor="let q of converse.ques" > 
   
- <input type="text" id="question" [value]="q" width="50"><br />
+ <input type="text" id="question" [value]="q" ><br />
   </div><br/>
-
+  <button (click)="onAddRow" >Add row</button>
+  <br/>
+    <input type="text" >
+    
  
 
 

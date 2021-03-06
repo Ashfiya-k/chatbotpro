@@ -9,7 +9,7 @@ import { ChatService } from '../chatbot/chat.service';
 export class EditChatComponent implements OnInit {
 
    categories:string[];
-  addRow=false;
+
 
 
   constructor(private chatService:ChatService) { }
@@ -31,6 +31,9 @@ converse:{category:string,ques:string[],ans:string};
   
     
        console.log("Done");
+     }
+     onAddRow(){
+       
      }
   }
    
