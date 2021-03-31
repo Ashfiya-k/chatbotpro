@@ -14,10 +14,10 @@
 
   	<div class="collapse navbar-collapse" [ngClass]="{'show':navbarStatus}" >
 			<div class="navbar-nav ml-auto ">
-				<a class="navi nav-link nav-item" routerLink="/" routerLinkActive="active">Home</a>
-				<a class="navi nav-link nav-item" routerLink="/menu" routerLinkActive="active">Menu</a>
-				<a class="navi nav-link nav-item" [routerLink]="['/contacts']" routerLinkActive="active">Contacts</a>
-        <a class="navi nav-link nav-item" [routerLink]="['/aboutus']" routerLinkActive="active">AboutUs</a>
+				<a class="navi nav-link nav-item" routerLink="/" routerLinkActive="active"(click)="navbarStatus=false">Home</a>
+				<a class="navi nav-link nav-item" routerLink="/menu" routerLinkActive="active"(click)="navbarStatus=false">Menu</a>
+				<a class="navi nav-link nav-item" [routerLink]="['/contacts']" routerLinkActive="active" (click)="navbarStatus=false">Contacts</a>
+        <a class="navi nav-link nav-item" [routerLink]="['/aboutus']" routerLinkActive="active"  (click)="navbarStatus=false">AboutUs</a>
 				<!-- <a class="navi nav-link nav-item" href="">Offers</a> -->
 				<!-- <a class="navi nav-link nav-item" routerLink="/chatbot">Bot</a> -->
 

@@ -14,9 +14,15 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ChatService } from './chatbot/chat.service';
 import { EditChatComponent } from './edit-chat/edit-chat.component';
+import { PostService } from './post.service';
+import { HttpClientModule } from "@angular/common/http";
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+
+import { AngularFireModule } from '@angular/fire';
+import { environment } from "../environments/environment";
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, AppRoutingModule,IvyCarouselModule],
+  imports: [BrowserModule, FormsModule, AppRoutingModule,IvyCarouselModule,HttpClientModule, AngularFireDatabaseModule,  AngularFireModule.initializeApp(environment.firebaseConfig), ],
   declarations: [
     AppComponent,
     HelloComponent,
@@ -30,6 +36,6 @@ import { EditChatComponent } from './edit-chat/edit-chat.component';
     
   ],
   bootstrap: [AppComponent],
-  providers: [ChatService]
+  providers: [ChatService, PostService]
 })
 export class AppModule {}

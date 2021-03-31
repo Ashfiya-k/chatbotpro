@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ChatService } from '../chatbot/chat.service';
+import { Post } from '../post.model';
 
 @Component({
   selector: 'app-edit-chat',
@@ -13,7 +14,7 @@ export class EditChatComponent implements OnInit {
 
 
   constructor(private chatService:ChatService) { }
-converse:{category:string,ques:string[],ans:string};
+converse:Post;
 
   ngOnInit() {
     

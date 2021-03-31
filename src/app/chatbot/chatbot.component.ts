@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { ChatService } from './chat.service';
 
 @Component({
@@ -15,21 +15,27 @@ export class ChatbotComponent implements OnInit {
   // ngOnInit() {
   // }
   // onSend(txt){
-  //   this.sendText.push(txt.value);
+  //   this.sendText.push(txt.alue);
   //   this.sendText;
   //   txt.value='';
 
   // }
-
-     sendText=[];
+  constructor(private chatService:ChatService) { }
+  sendText=[];
+  @ViewChild('msgBox') x: ElementRef;  
+scrolltop: number = null;
+ 
    status=false;
-   reply:{category:string,ques:string[],ans:string};
+   reply:{category:string,question:string[],answer:string};
   colorStatus:boolean;
 
-  constructor(private chatService:ChatService) { }
+  
 
   ngOnInit() {
+    
+    
   }
+
 
 
 
@@ -41,6 +47,7 @@ export class ChatbotComponent implements OnInit {
      else{
   
     this.sendText.push(txt.value);
+      this.scrolltop = this.x.nativeElement.scrollHeight+100;
   
         
         setTimeout(()=>{
@@ -48,11 +55,13 @@ export class ChatbotComponent implements OnInit {
        
       if(this.reply !== undefined)
       {
-          this.sendText.push(this.reply.ans);
+          this.sendText.push(this.reply.answer);
+          this.scrolltop = this.x.nativeElement.scrollHeight+100;
       }   
       else{
    
       this.sendText.push("Sorry I did not Understand.");
+      this.scrolltop = this.x.nativeElement.scrollHeight+100;
       console.log("in reply method" );
         
       }

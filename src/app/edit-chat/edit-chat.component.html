@@ -10,7 +10,7 @@
   <br/>
    
   <label for="question">Question : </label>  &nbsp;
-  <div *ngFor="let q of converse.ques" > 
+  <div *ngFor="let q of converse.question" > 
   
  <input type="text" id="question" [value]="q" ><br />
   </div><br/>
@@ -23,7 +23,7 @@
 
   <label for="answer">Answer : </label> <br/>
   <textarea cols="50" rows="10" > 
-  {{converse.ans}}
+  {{converse.answer}}
   </textarea>
  
 
