@@ -3,7 +3,9 @@
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js'); */
 
 
-
+.orderType{
+  border:solid;
+}
 .gallery {
   width: 200px;
   height: 400px;
@@ -18,6 +20,10 @@ carousel {
 z-index: 60;
 width:1350px;
 height:650px;
+}
+.image{
+  width:193px;
+  height:287px;
 }
 
 /* @media only screen and (max-width: 600px) 
