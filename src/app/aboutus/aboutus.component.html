@@ -1,47 +1,11 @@
-<div class="container px-3">
+<div *ngFor="let details of employ"class="container px-3">
     <div class="row my-5 sc_box_shadow">
       <div class="col-md-7 p-sm-5">
-        <p>Name: Tejaswini Penneni<br>Emp Id: 1786203<br>Role: Team Representative<br>Area: Brigade Bhuwalka<br>Location: Bangalore </p>
+        <p>Name: {{details.name}}<br>Emp Id: {{details.id}}<br>Role: {{details.role}}<br>Area: {{details.area}}<br>Location: {{details.location}} </p>
       </div>
       <div class="col-md-5 bg-map-inverse p-5">
         <hr>
-      <a [routerLink]="['/editchat']" ><img class="img-fluid rounded-circle p-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCOCylq3PGQ1fsDxQKPOgzQY2qe1FEkQfLxg&usqp=CAU" data-crop="scale" data-width="1200" data-quality="auto"></a>
-      </div>
-    </div>
-</div>
-
-<div class="container px-3">
-    <div class="row my-5 sc_box_shadow">
-      <div class="col-md-7 p-sm-5">
-        <p>Name: Ashfiya Khan<br>Emp Id: 1772834<br>Role: Team Member<br>Area: Deccan Park, Madhapur<br>Location: Hyderabad </p>
-      </div>
-      <div class="col-md-5 bg-map-inverse p-5">
-        <hr>
-        <img class="img-fluid rounded-circle p-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0rbdZwb1VEK0g16zfVlOjEqBhLK7PCfMx2g&usqp=CAU" data-crop="scale" data-width="1200" data-quality="auto">
-      </div>
-    </div>
-</div>
-
-<div class="container px-3">
-    <div class="row my-5 sc_box_shadow">
-      <div class="col-md-7 p-sm-5">
-        <p>Name: Shaivee Kumawat<br>Emp Id: 1784239<br>Role: Team Member<br>Area: Deccan Park, Madhapur<br>Location: Hyderabad  </p>
-      </div>
-      <div class="col-md-5 bg-map-inverse p-5">
-        <hr>
-        <img class="img-fluid rounded-circle p-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuA6gPnjURZdtkNz72SgrASIvXSzeCHBDytg&usqp=CAU" data-crop="scale" data-width="1200" data-quality="auto">
-      </div>
-    </div>
-</div>
-
-<div class="container px-3">
-    <div class="row my-5 sc_box_shadow">
-      <div class="col-md-7 p-sm-5">
-        <p>Name: Manjusha Kondreddy<br>Emp Id: 1786552<br>Role: Team Member<br>Area: Brigade Bhuwalka<br>Location: Bangalore </p>
-      </div>
-      <div class="col-md-5 bg-map-inverse p-5">
-        <hr>
-        <img class="img-fluid rounded-circle p-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1ZkNiuWyRoqgsPIaxdE5WECpLdi0SzDcP9A&usqp=CAU" data-crop="scale" data-width="1200" data-quality="auto">
+      <a [routerLink]="['/editchat']" ><img class="img-fluid rounded-circle p-3" src={{details.image}} data-crop="scale" data-width="1200" data-quality="auto"></a>
       </div>
     </div>
 </div>
