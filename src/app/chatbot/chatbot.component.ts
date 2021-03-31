@@ -7,19 +7,7 @@ import { ChatService } from './chat.service';
   styleUrls: ['./chatbot.component.css']
 })
 export class ChatbotComponent implements OnInit {
-  //  txt='';
-  //  sendText=[];
-  //  status=false;
-  // constructor() { }
-
-  // ngOnInit() {
-  // }
-  // onSend(txt){
-  //   this.sendText.push(txt.alue);
-  //   this.sendText;
-  //   txt.value='';
-
-  // }
+  
   constructor(private chatService:ChatService) { }
   sendText=[];
   @ViewChild('msgBox') x: ElementRef;  
